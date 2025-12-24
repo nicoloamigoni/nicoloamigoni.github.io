@@ -58,6 +58,7 @@ h1 {
   line-height: 100%;
 }
 h2 {
+  padding-top:10px;
   font: var(--font-regular) 1.5rem var(--second-font);
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -73,7 +74,7 @@ h2 {
 /*=============== HEADER & NAV ===============*/
 .menu-section{
   background-color: rgba(255, 255, 255, 0.8);
-  padding-block: 1rem;
+  padding-block: 4rem;
   margin: 1.5rem;
   border-radius: 10px;
   color: var(--first-color);
