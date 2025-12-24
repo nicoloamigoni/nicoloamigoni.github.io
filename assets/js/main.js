@@ -32,6 +32,7 @@ gsap.from(".home__img-11", 1, { opacity: 0, y: 200, delay: 0.1 });
 gsap.from(".home__img-14", 1, { opacity: 0, y: 200, delay: 0.5 });
 gsap.from(".home__img-15", 1, { opacity: 0, y: 200, delay: 0.8 });
 gsap.from(".home__img-16", 1, { opacity: 0, y: 200, delay: 1.1 });
+gsap.from(".home__img-17", 1, { opacity: 0, y: 200, delay: 1.3 });
 gsap.from(".home__img-10", 1, {
   opacity: 0,
   y: 200,
