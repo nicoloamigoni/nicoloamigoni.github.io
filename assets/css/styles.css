@@ -9,7 +9,7 @@
   --body-font: "Montserrat", sans-serif;
   --second-font: "Galada", cursive;
   --biggest-font-size: 3rem;
-  --normal-font-size: 0.938rem;
+  --normal-font-size: 1.3rem;
 
   --font-regular: 400;
   --font-semi-bold: 600;
@@ -59,7 +59,7 @@ h1 {
 }
 h2 {
   padding-top:10px;
-  font: var(--font-regular) 1.5rem var(--second-font);
+  font: var(--font-regular) 1.8rem var(--second-font);
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
