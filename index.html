@@ -89,7 +89,26 @@
           
       </section>
     </main>
-    <div>
+    <div style="width: 100vw; height: 200vw; background-image: linear-gradient(to right, rgba(231, 244, 254), rgba(244, 250, 254));"></div>
+    <img
+      src="assets/img/img-12.svg"
+      alt="img-17"
+      class="home__img-17" style="position:absolute; position: absolute;bottom:-100px;"/>
+    
+      <img
+      src="assets/img/img-12.svg"
+      alt="img-17"
+      class="home__img-17" style="position:absolute; position: absolute;bottom:-400px;"/>
+
+      <img
+      src="assets/img/img-13.svg"
+      alt="img-17"
+      class="home__img-17" style="position:absolute;bottom:-600px;"/>
+      <img
+      src="assets/img/img-13.svg"
+      alt="img-17"
+      class="home__img-17" style="position:absolute;bottom:-350px;"/>
+    <!--<div>
     <img
       src="assets/img/img-11.svg"
       alt="img-17"
@@ -108,61 +127,9 @@
       class="home__img-17" style="position:absolute;bottom:0px;"/>
 
 
-    <img
-      src="assets/img/img-11.svg"
-      alt="img-17"
-      class="home__img-17" style="width:100vw; position: absolute;bottom:-75px"/>
-    <img
-      src="assets/img/img-12.svg"
-      alt="img-17"
-      class="home__img-17" style="position:absolute; position: absolute;bottom:-75px;"/>
-    <img
-      src="assets/img/img-14.svg"
-      alt="img-17"
-      class="home__img-17" style="position:absolute; position: absolute;bottom:-75px;"/>
-    <img
-      src="assets/img/img-13.svg"
-      alt="img-17"
-      class="home__img-17" style="position:absolute;bottom:-75px;"/>
-
-   <!-- bottom: -150px -->
-<img src="assets/img/img-11.svg" class="home__img-17" style="width:100vw; position:absolute; bottom:-150px"/>
-<img src="assets/img/img-12.svg" class="home__img-17" style="position:absolute; bottom:-150px"/>
-<img src="assets/img/img-14.svg" class="home__img-17" style="position:absolute; bottom:-150px"/>
-<img src="assets/img/img-13.svg" class="home__img-17" style="position:absolute; bottom:-150px"/>
-
-<!-- bottom: -225px -->
-<img src="assets/img/img-11.svg" class="home__img-17" style="width:100vw; position:absolute; bottom:-225px"/>
-<img src="assets/img/img-12.svg" class="home__img-17" style="position:absolute; bottom:-225px"/>
-<img src="assets/img/img-14.svg" class="home__img-17" style="position:absolute; bottom:-225px"/>
-<img src="assets/img/img-13.svg" class="home__img-17" style="position:absolute; bottom:-225px"/>
-
-<!-- bottom: -300px -->
-<img src="assets/img/img-11.svg" class="home__img-17" style="width:100vw; position:absolute; bottom:-300px"/>
-<img src="assets/img/img-12.svg" class="home__img-17" style="position:absolute; bottom:-300px"/>
-<img src="assets/img/img-14.svg" class="home__img-17" style="position:absolute; bottom:-300px"/>
-<img src="assets/img/img-13.svg" class="home__img-17" style="position:absolute; bottom:-300px"/>
-
-<!-- bottom: -375px -->
-<img src="assets/img/img-11.svg" class="home__img-17" style="width:100vw; position:absolute; bottom:-375px"/>
-<img src="assets/img/img-12.svg" class="home__img-17" style="position:absolute; bottom:-375px"/>
-<img src="assets/img/img-14.svg" class="home__img-17" style="position:absolute; bottom:-375px"/>
-<img src="assets/img/img-13.svg" class="home__img-17" style="position:absolute; bottom:-375px"/>
-
-<!-- bottom: -450px -->
-<img src="assets/img/img-11.svg" class="home__img-17" style="width:100vw; position:absolute; bottom:-450px"/>
-<img src="assets/img/img-12.svg" class="home__img-17" style="position:absolute; bottom:-450px"/>
-<img src="assets/img/img-14.svg" class="home__img-17" style="position:absolute; bottom:-450px"/>
-<img src="assets/img/img-13.svg" class="home__img-17" style="position:absolute; bottom:-450px"/>
-
-<!-- bottom: -500px -->
-<img src="assets/img/img-11.svg" class="home__img-17" style="width:100vw; position:absolute; bottom:-500px"/>
-<img src="assets/img/img-12.svg" class="home__img-17" style="position:absolute; bottom:-500px"/>
-<img src="assets/img/img-14.svg" class="home__img-17" style="position:absolute; bottom:-500px"/>
-<img src="assets/img/img-13.svg" class="home__img-17" style="position:absolute; bottom:-500px"/>
 
     
-    </div>
+    </div>-->
     <div class="home__title">
             <h1>
             Buon <br />
@@ -174,20 +141,20 @@
               <h1>Menù</h1>
               <h2>Antipasti</h2>
             
-              <p>Salmone marinato</p>
+              <p>Salmone marinato buonissimo</p>
 
               <p>Scampi in padella con gremolata esotica</p>
 
-              <p>Terrina di pollo</p>
+              <p>Terrina di pollo della Nonna<br/>(la classica)</p>
 
-              <p>Insalata russa</p>
+              <p id="russa">Insalata russa</p>
 
               <p>Galantina</p>
 
               <p>Flan di zucca al gorgonzola</p>
 
               <h2>Portate principali</h2>
-              <p>Primo piatto a sorpresa</p>
+              <p>Primo piatto a sorpresa di Zia Manu</p>
 
               <p>Puntarelle in padella</p>
 
@@ -207,5 +174,46 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+      const el = document.getElementById("russa");
+
+      const IT = "Insalata russa";
+      const RU = "Русский салат";
+
+      function maybeFlashRussian() {
+        // probabilità: 20%
+        if (Math.random() < 0.2) {
+          el.innerText = RU;
+
+          // quanto resta visibile il russo (ms)
+          setTimeout(() => {
+            el.innerText = IT;
+          }, 200);
+        }
+      }
+
+      // controllo ogni 3 secondi
+      setInterval(maybeFlashRussian, 700);
+    </script>
+
+    <audio id="sleigh" src="assets/Sleigh Ride.mp3" preload="auto" loop></audio>
+
+    <script>
+      const audio = document.getElementById("sleigh");
+
+      function startMusic() {
+        console.log("start music");
+        audio.play().catch(() => {});
+        document.removeEventListener("click", startMusic);
+        document.removeEventListener("scroll", startMusic);
+      }
+
+      // parte alla prima interazione
+      document.addEventListener("click", startMusic);
+    </script>
+
+
   </body>
 </html>
