@@ -207,7 +207,13 @@
         console.log("start music");
         audio.play().catch(() => {});
         document.removeEventListener("click", startMusic);
-        document.removeEventListener("scroll", startMusic);
+        document.addEventListener("click", stopMusic);  
+      }
+
+      function stopMusic() {
+        audio.pause();
+        document.removeEventListener("click", stopMusic);
+        document.addEventListener("click", startMusic);
       }
 
       // parte alla prima interazione
